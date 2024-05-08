@@ -79,7 +79,7 @@ contract ConfirmedOwnerUpgradeable is Initializable, OwnableInterface {
     }
 
     /**
-     * @notice Reverts if called by anyone other than the contract owner
+     * @notice Reverts if called by anyone other than the contract owner.
      */
     modifier onlyOwner() {
         _validateOwnership();
